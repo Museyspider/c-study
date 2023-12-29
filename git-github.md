@@ -47,3 +47,18 @@ git push 将当前分支的项目发布到github上
 >  - ==每次要编写代码前请先 ***git pull***, 编写完了一定要 ***git push***==
 >  - git add .     git add *.txt  添加多个文件到暂存区
 >  - 本地创建的新分支 提交到远程仓库 远程仓库会创建该分支 ==git push -u origin pa0== 远程仓库会创建pa0这个分支
+
+## 关于git reset的一些命令
+```
+git reset HEAD file.txt
+这将撤销对 `file.txt` 的暂存更改，让它回到工作目录中的状态。
+
+git reset --soft HEAD~1
+这将把HEAD指向之前的一个提交，并保留之前的更改。
+
+git reset --mixed HEAD~1
+这将把HEAD指向之前的一个提交，并取消暂存的更改，但保留这些更改。
+
+git reset --hard HEAD~1
+这将把HEAD指向之前的一个提交，并且丢弃之后的更改。
+```
