@@ -38,11 +38,12 @@ git push 将当前分支的项目发布到github上
 2. 在本地创建一个文件夹,并用vscode打开
 3. 在该文件夹目录下输入以下命令
    1. git init
-   2. git branch -M main
-   3. git remote add origin https://github.com/Museyspider/first.git
+   2. git branch -M main  ==运行 git branch -M main 将当前分支（通常是 "master"）重命名为 "main"。==
+   3. git remote add origin https://github.com/Museyspider/first.git ==这个命令将指定的 URL 设置为名为 "origin" 的远程仓库。==
    4. 创建README.md文件  git add README.md
    5. git commit
-   6. ***git push -u origin main***
+   6. ***git push -u origin main*** ==将本地仓库的主分支推送到远程仓库origin中==
 > tips:
 >  - ==每次要编写代码前请先 ***git pull***, 编写完了一定要 ***git push***==
 >  - git add .     git add *.txt  添加多个文件到暂存区
+>  - 本地创建的新分支 提交到远程仓库 远程仓库会创建该分支 ==git push -u origin pa0== 远程仓库会创建pa0这个分支
