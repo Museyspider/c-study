@@ -4,7 +4,17 @@ struct node
 {
   int val;
   struct node *next;
-  int c;
+  enum {a=100, b, c=110, };
+  struct div
+  {
+    double d;
+    long long l;
+  };
+  union unian
+  {
+    int first;
+    double second;
+  };
 } node1;
 
 enum
@@ -18,9 +28,8 @@ enum
 int main()
 {
   node1.val = 1;
-  node1.c = 2;
   printf("%d\n", er);
   printf("%d\n", month);
-  printf("node.c=%d\n", node1.c);
+
   return 0;
 }
