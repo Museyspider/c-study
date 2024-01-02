@@ -2,6 +2,9 @@
 # git与github
 > 相关 gitlib gitee  awesome c
 
+## git相关学习网站
+[git沙盒](https://onlywei.github.io/explain-git-with-d3/)
+[git原理可视化](https://ndpsoftware.com/git-cheatsheet.html#loc=index;)
 
 ## git中的一些基本命令
 ```
