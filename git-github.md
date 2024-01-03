@@ -65,3 +65,13 @@ git reset --mixed HEAD~1
 git reset --hard HEAD~1
 这将把HEAD指向之前的一个提交，并且丢弃之后的更改。
 ```
+
+##  一个git本地仓库对应多个远程仓库
+1. git remote add unian https://github.com/Museyspider/nju-ics2023.git ***添加一个名为unian的远程仓库***
+2. git remote -v ***查看与本地仓库关联的所有远程仓库***
+3. git push https://github.com/Museyspider/nju-ics2023.git pa0 ***将本地仓库的pa0分支提交到该url远程仓库***
+4. git remote rm remote_url ***可以删除一个已存在的远程仓库***
+5.  git fetch remote_url ***可以从指定的远程仓库拉取最新的代码***
+
+## git删除分支
+git branch -d 分支名
