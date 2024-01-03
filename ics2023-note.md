@@ -20,3 +20,6 @@ make -f build.mk debug
 3. engine_start() -> sdb_mainloop(不停的执行命令)
 
 ## 监视点还没测,监视点的值改变会发生什么
+
+## cpu干的事
+while()
